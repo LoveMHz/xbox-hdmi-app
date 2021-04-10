@@ -101,7 +101,7 @@ int main(void) {
     return 0;
   }
 
-  window = SDL_CreateWindow("XboxHDMI", SDL_WINDOWPOS_UNDEFINED,
+  window = SDL_CreateWindow("XboxHD+", SDL_WINDOWPOS_UNDEFINED,
                             SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH,
                             SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
   if (window == NULL) {

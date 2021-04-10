@@ -28,7 +28,7 @@ Scene0::Scene0() {
 
   //
   if(HalReadSMBusValue(I2C_HDMI_ADRESS, I2C_FIRMWARE_VERSION + 0, false, &smbus_read) != 0) {
-    snprintf(text_buffer, sizeof(text_buffer), "XboxHDMI not detected!");
+    snprintf(text_buffer, sizeof(text_buffer), "XboxHD+ not detected!");
   } else {
     firmware_version[0] = (uint8_t)smbus_read;
 

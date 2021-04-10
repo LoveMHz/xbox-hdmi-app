@@ -49,14 +49,14 @@ void Scene3::event(SDL_Event event) {
 void Scene3::render(SDL_Renderer *renderer) {
   switch (update_stage) {
     case UpdateState::Start: {
-      console->print("Checking for XboxHDMI Board");
+      console->print("Checking for XboxHD+ Board");
       update_stage = UpdateState::CheckFirmware;
       break;
     }
 #ifdef _XBOX
     case UpdateState::CheckFirmware: {
       if(HalReadSMBusValue(I2C_HDMI_ADRESS, I2C_BOOT_MODE, false, &current_boot) != 0) {
-        console->print("No XboxHDMI hardware found.");
+        console->print("No XboxHD+ hardware found.");
         update_stage = UpdateState::End;
       } else {
         console->print("Found... Revision: 3C");

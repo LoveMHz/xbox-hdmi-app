@@ -1,4 +1,4 @@
-XBE_TITLE = XboxHDMI
+XBE_TITLE = XboxHD
 GEN_XISO = $(XBE_TITLE).iso
 NXDK_CXX = y
 NXDK_SDL = y
